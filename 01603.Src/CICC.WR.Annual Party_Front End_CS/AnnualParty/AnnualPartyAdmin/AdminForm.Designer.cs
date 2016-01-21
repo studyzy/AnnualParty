@@ -64,11 +64,13 @@
             this.label10 = new System.Windows.Forms.Label();
             this.btnNotLottery = new System.Windows.Forms.Button();
             this.rtbNotLotteryEmployeeNumbers = new System.Windows.Forms.RichTextBox();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.btnCheckinAll = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.btnCheckinAll = new System.Windows.Forms.Button();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -93,6 +95,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.label11);
             this.tabPage1.Controls.Add(this.txbEmployeePhotoFolder);
             this.tabPage1.Controls.Add(this.txbEmployeeListFile);
             this.tabPage1.Controls.Add(this.btnImportPhoto);
@@ -427,10 +431,6 @@
             this.rtbNotLotteryEmployeeNumbers.TabIndex = 0;
             this.rtbNotLotteryEmployeeNumbers.Text = "";
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // tabPage5
             // 
             this.tabPage5.Controls.Add(this.btnCheckinAll);
@@ -439,7 +439,7 @@
             this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage5.Size = new System.Drawing.Size(315, 291);
             this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "全抽奖";
+            this.tabPage5.Text = "全签到";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // btnCheckinAll
@@ -448,9 +448,31 @@
             this.btnCheckinAll.Name = "btnCheckinAll";
             this.btnCheckinAll.Size = new System.Drawing.Size(231, 105);
             this.btnCheckinAll.TabIndex = 0;
-            this.btnCheckinAll.Text = "不需要签到，都参加抽奖";
+            this.btnCheckinAll.Text = "不需要签到程序，都算是签到了";
             this.btnCheckinAll.UseVisualStyleBackColor = true;
             this.btnCheckinAll.Click += new System.EventHandler(this.btnCheckinAll_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(9, 40);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(179, 12);
+            this.label11.TabIndex = 6;
+            this.label11.Text = "CSV格式，列为：工号,姓名,部门";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(11, 147);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(137, 12);
+            this.label12.TabIndex = 7;
+            this.label12.Text = "照片为“工号.jpg”格式";
             // 
             // AdminForm
             // 
@@ -518,6 +540,8 @@
         private System.Windows.Forms.RichTextBox rtbNotLotteryEmployeeNumbers;
         private System.Windows.Forms.TabPage tabPage5;
         private System.Windows.Forms.Button btnCheckinAll;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
 

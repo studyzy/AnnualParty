@@ -203,7 +203,7 @@ namespace AnnualPartyAdmin
                                                                    StringSplitOptions.RemoveEmptyEntries);
             foreach (var number in eNumbers)
             {
-                AnnualPartySqlHelper.Instance.UpdateAward(number, 5, "不参加抽奖");
+                AnnualPartySqlHelper.Instance.UpdateAward(number, 99, "不参加抽奖");
             }
             MessageBox.Show("处理完成");
         }
